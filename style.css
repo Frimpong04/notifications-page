@@ -19,6 +19,10 @@ html {
 
 }
 
+p {
+    color:var(--Grayish-blue);
+}
+
 /* body styles */
 body {
     width: 100%;
@@ -30,6 +34,7 @@ body {
     padding: 3rem 0;
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
 
 /* main container styles */
 main {
@@ -49,6 +54,7 @@ main {
     align-items: center;
     margin-bottom: 1rem;
     font-size: 1.6rem;
+
 }
 
 .title span {
@@ -64,7 +70,7 @@ main {
 }
 
 .title p {
-    font-weight: bold;
+    font-weight: normal;
 }
 
 /* notification container styles */
@@ -113,10 +119,12 @@ main {
 }
 .author {
     font-weight:bold;
+    color: var(--Very-dark-blue);
 }
 
 .post-title {
-    font-weight: bold;
+    font-weight: normal;
+    color: var(--Very-dark-blue);
 }
 
 .chess-club {
@@ -159,4 +167,10 @@ main {
 .author:hover {
     color: var(--blue); 
     cursor: pointer;
+}
+
+@media only screen and (max-width:750px) {
+    main {
+        width: 95%;
+    }
 }
