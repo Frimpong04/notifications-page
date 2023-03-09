@@ -9,12 +9,154 @@ html {
     font-size: 62.5%;
     --red: hsl(1, 90%, 64%);
     --blue: hsl(219, 85%, 26%);
-    --White: hsl(0, 0%, 100%)
+    --White: hsl(0, 0%, 100%);
     --Very-light-grayish-blue: hsl(210, 60%, 98%);
     --Light-grayish-blue-1: hsl(211, 68%, 94%);
     --Light-grayish-blue-2: hsl(205, 33%, 90%);
     --Grayish-blue: hsl(219, 14%, 63%);
     --Dark-grayish-blue: hsl(219, 12%, 42%);
     --Very-dark-blue: hsl(224, 21%, 14%);
+
 }
 
+/* body styles */
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Very-light-grayish-blue);
+    padding: 3rem 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* main container styles */
+main {
+    max-width:65rem;
+    background-color: var(--White);
+    /* border: 1px solid red; */
+    padding:1.5rem;
+    border-radius: 1rem;
+    color: var(--Very-dark-blue);
+    box-shadow: 9px 9px 56px var(--Light-grayish-blue-1);
+}
+
+/* title styles */
+.title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.title span {
+    background-color:var(--blue);
+    color: var(--White);
+    width:2.5rem;
+    height:2.5rem;
+    padding: 0.1rem 0.5rem;
+    border-radius:0.5rem;
+    display: inline-block;
+    margin-left:1rem;
+    font-weight: normal;
+}
+
+.title p {
+    font-weight: bold;
+}
+
+/* notification container styles */
+.notification-items {
+    padding: 2rem;
+}
+
+/* notification-item styles */
+.notification-item {
+    background-color:var(--Very-light-grayish-blue);
+    margin-bottom:1rem;
+    display: flex;
+    gap:1rem;
+    padding:1rem;
+    border-radius:1rem;
+}
+
+.notification-item img {
+    width:3rem;
+    height: 3rem;
+}
+
+.unread-mark {
+    display:inline-block;
+    width:0.6rem;
+    height: 0.6rem;
+    border-radius:50%;
+    background-color: var(--red);
+    /* border:1px solid blue; */
+    margin-left:0.5rem;
+}
+
+.post-container p {
+    font-size:1.6rem;
+}
+
+.kimberly-post {
+    flex:1;
+}
+
+.commented-image:hover {
+    cursor: pointer;
+}
+.post-time {
+    color:var(--Grayish-blue);
+}
+.author {
+    font-weight:bold;
+}
+
+.post-title {
+    font-weight: bold;
+}
+
+.chess-club {
+    /* color:var(--blue); */
+    font-weight: bold;
+}
+.chess-club:hover {
+    cursor: pointer;
+    color: var(--blue);
+}
+.post {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:1rem;
+    width:100%;
+}
+
+.message {
+    border:2px solid var(--Light-grayish-blue-2);
+    padding: 1rem;
+    border-radius:0.5rem;
+    font-size:1.6rem;
+}
+
+.message:hover {
+    background-color: var(--Light-grayish-blue-1);
+    border: 2px solid var(--Light-grayish-blue-1);
+    cursor: pointer;
+}
+.mark-all:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.post-title:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+.author:hover {
+    color: var(--blue); 
+    cursor: pointer;
+}

@@ -7,14 +7,17 @@
     <meta name="description" content="A notification page layout design ">
     <meta name="robot" content="index,follow">
     <link rel="icon" href="./assets/images/favicon-32x32.png"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css"/>
     <title>Notification page</title>
 </head>
 <body>
     <main class="container">
         <div class="title">
-            <p>Notifications <span class="notification-number">3</span></p>
-            <p>Mark all as read</p>
+            <h2>Notifications <span class="notification-number">3</span></h2>
+            <p class="mark-all">Mark all as read</p>
         </div>
 
         <div class="notification-items">
@@ -22,7 +25,7 @@
                 <img src="./assets/images/avatar-mark-webber.webp" alt=""/>
                 <div class="post-container">
                     <p><span class="author">Mark Webber</span> reacted to your recent post <span class="post-title">My first tournament today!</span> <span class="unread-mark"></span></p>
-                    <p class="post-item">1m ago</p>
+                    <p class="post-time">1m ago</p>
                 </div>
                 
             </div>
@@ -30,7 +33,7 @@
             <div class="notification-item">
                 <img src="./assets/images/avatar-angela-gray.webp" alt="" />
                 <div class="post-container">
-                    <p><span>Angela Gray</span> followed you <span class="unread-mark"></span></p>
+                    <p><span class="author">Angela Gray</span> followed you <span class="unread-mark"></span></p>
                     <p class="post-time">5m ago</p>
                 </div>
                 
@@ -39,7 +42,7 @@
             <div class="notification-item">
                 <img src="./assets/images/avatar-jacob-thompson.webp" alt=""/>
                 <div class="post-container">
-                    <p><span class="author">Jacob Thompson</span>has joined<span class="unread-mark"></span></p>
+                    <p><span class="author">Jacob Thompson</span> has joined your group <span class="chess-club">Chess Club</span><span class="unread-mark"></span></p>
                     <p class="post-time">1 day ago</p>
                 </div>
                 
@@ -49,19 +52,19 @@
                 <img src="./assets/images/avatar-rizky-hasanuddin.webp" alt=""/>
                 <div class="post">
                     <div class="post-container">
-                        <p><span>Ricky Hasanuddin</span>sent you a private message</p>
+                        <p><span class="author">Ricky Hasanuddin</span>sent you a private message<span class="unread-mark"></span></p>
                         <p class="post-time">5 days ago</p>
                     </div>
                     
-                    <p>Hello, thanks for setting up thr Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
+                    <p class="message">Hello, thanks for setting up to the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.</p>
                 </div>
             </div>
 
             <div class="notification-item item-with-image">
                 <img src="./assets/images/avatar-kimberly-smith.webp" alt=""/>
                 <div class="post">
-                    <div class="post-container">
-                        <p><span>Kimberly Smith</span> commented on your picture</p>
+                    <div class="post-container kimberly-post">
+                        <p><span class="author">Kimberly Smith</span> commented on your picture<span class="unread-mark"></span></p>
                         <p class="post-time">1 week ago</p>
                     </div>
     
@@ -74,7 +77,7 @@
                 <img src="./assets/images/avatar-nathan-peterson.webp" alt=""/>
 
                 <div class="post-container">
-                    <p><span class="author">Nathan Petterson</span> reacted to your recent post <span class="title">5 end-game strategies to increase your win rate</span></p>
+                    <p><span class="author">Nathan Petterson</span> reacted to your recent post <span class="post-title">5 end-game strategies to increase your win rate</span><span class="unread-mark"></span></p>
                     <p class="post-time">2 weeks ago</p>
                 </div>
                
@@ -83,8 +86,8 @@
             <div class="notification-item">
                 <img src="./assets/images/avatar-anna-kim.webp" alt=""/>
 
-                <div>
-                    <p><span>Anna Kim</span> left the group</p>
+                <div class="post-container">
+                    <p><span class="author">Anna Kim</span> left the group <span class="chess-club">Chess Club</span><span class="unread-mark"></span></p>
                     <p class="post-time">2 weeks ago</p>
                 </div>
             </div>
