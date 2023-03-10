@@ -88,6 +88,10 @@ main {
     border-radius:1rem;
 }
 
+.notification-item-clicked {
+    background-color: var(--White);
+}
+
 .notification-item img {
     width:3rem;
     height: 3rem;
